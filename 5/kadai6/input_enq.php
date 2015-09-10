@@ -2,7 +2,7 @@
 <?php
 session_start();
 
-//$errors = array();
+$errors = array();
 
 if(isset($_POST['submit'])){
     
@@ -64,7 +64,7 @@ echo"</ul>";
 
 ?>
 
-<form action="input_enq.php" method="post">
+<form action="confirm_enq.php" method="post">
     <table>
         <tr>
             <th>名前</th><td><input type="text" name="name" value="<?php if(isset($name)){echo $name;}?>"></td>

@@ -1,5 +1,6 @@
 
 <?php
+//var_dump($_POST);
 /*session_start();
 
 if(isset($_SESSION['name'])){
@@ -12,7 +13,7 @@ if(isset($_SESSION['name'])){
 
 
 <?php
-
+/*
 session_start();
 
 if(isset($_SESSION['name'])){
@@ -21,8 +22,9 @@ if(isset($_SESSION['name'])){
     $age = $_SESSION['age'];
     $email = $_SESSION['email'];
     $sex = $_SESSION['sex'];
-    
 }
+  */  
+
 
 ?>
 
@@ -43,16 +45,16 @@ if(isset($_SESSION['name'])){
 <form action="input_finish.php" method="post">
 <table>
 <tr>
-    <th>名前</th><td><?php echo $name; ?></td>
+    <th>名前</th><td><?php echo $_POST["name"]; ?></td>
 </tr>
 <tr>
-    <th>年齢</th><td><?php echo $age; ?></td>
+    <th>年齢</th><td><?php echo $_POST["age"]; ?></td>
 </tr>
 <tr>
-    <th>e-mail</th><td><?php echo $email; ?></td>
+    <th>e-mail</th><td><?php echo $_POST["email"]; ?></td>
 </tr>
 <tr>
-    <th>性別</th><td><?php echo $sex; ?></td>
+    <th>性別</th><td><?php echo $_POST["sex"]; ?></td>
 </tr>
 <tr>
     <td colspan="2"><input type="submit" name="submit" value="送信する"></td>
